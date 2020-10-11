@@ -1,0 +1,41 @@
+*{
+    font-family: 'Wallpoet', cursive;
+    color: whitesmoke;
+}
+
+body{
+    background-color: black;
+    
+}
+
+.clock{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.clock__meridian{
+    text-align: right;
+    font-size: 32px;
+}
+
+.clock__time{
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+}
+
+.clock__calendar{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.clock__time > :not(:last-child)::after{
+    content: ':';    
+}
+
+.clock__calendar > :not(:last-child)::after{
+    content: ',';    
+}
